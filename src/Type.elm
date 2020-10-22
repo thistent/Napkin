@@ -6,6 +6,14 @@ type Kind ann
     | KindArrow ann (Kind ann) (Kind ann)
 
 
+type Some f
+    = Some f
+
+
+type TypeIn uni
+    = TypeIn uni
+
+
 type Type tyname uni ann
     = TyVar ann tyname
     | TyFun ann (Type tyname uni ann) (Type tyname uni ann)
